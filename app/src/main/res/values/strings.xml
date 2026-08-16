@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Desafio01DSM</string>
+
+    <!-- Menú principal -->
+    <string name="titulo_principal">Primer Desafío Práctico</string>
+    <string name="ejercicio_promedio">Promedio del estudiante</string>
+    <string name="ejercicio_salario">Descuentos al salario</string>
+    <string name="ejercicio_calculadora">Calculadora básica</string>
+
+    <!-- Ejercicio 1 -->
+    <string name="titulo_promedio">Promedio del estudiante</string>
+    <string name="nombre_estudiante">Nombre del estudiante</string>
+    <string name="nota_1">Nota 1</string>
+    <string name="nota_2">Nota 2</string>
+    <string name="nota_3">Nota 3</string>
+    <string name="nota_4">Nota 4</string>
+    <string name="nota_5">Nota 5</string>
+    <string name="calcular_promedio">Calcular promedio</string>
+    <string name="promedio_final">Promedio final: %1$s</string>
+    <string name="estado_aprobado">Estado: Aprobado</string>
+    <string name="estado_reprobado">Estado: Reprobado</string>
+    <string name="error_nombre">Ingrese el nombre del estudiante</string>
+    <string name="error_nota_vacia">Ingrese una nota</string>
+    <string name="error_nota_rango">La nota debe estar entre 0 y 10</string>
+    <string name="notificacion_promedio">Promedio: %1$s - %2$s</string>
+
+    <!-- Ejercicio 2 -->
+    <string name="titulo_salario">Descuentos al salario</string>
+    <string name="nombre_empleado">Nombre del empleado</string>
+    <string name="salario_base">Salario base</string>
+    <string name="calcular_salario">Calcular salario</string>
+    <string name="salario_bruto">Salario bruto: $%1$s</string>
+    <string name="descuento_renta">Renta: $%1$s</string>
+    <string name="descuento_afp">AFP (7.25%%): $%1$s</string>
+    <string name="descuento_isss">ISSS (3%%): $%1$s</string>
+    <string name="salario_neto">Salario neto: $%1$s</string>
+    <string name="error_empleado">Ingrese el nombre del empleado</string>
+    <string name="error_salario">Ingrese un salario válido</string>
+
+    <!-- Ejercicio 3 -->
+    <string name="titulo_calculadora">Calculadora básica</string>
+    <string name="numero_1">Número 1</string>
+    <string name="numero_2">Número 2</string>
+    <string name="resultado">Resultado</string>
+    <string name="suma">Suma</string>
+    <string name="resta">Resta</string>
+    <string name="multiplicacion">Multiplicación</string>
+    <string name="division">División</string>
+    <string name="exponente">Exponente</string>
+    <string name="raiz">Raíz cuadrada</string>
+    <string name="historial">Historial</string>
+    <string name="error_numero_1">Ingrese el primer número</string>
+    <string name="error_numero_2">Ingrese el segundo número</string>
+    <string name="error_division_cero">No se puede dividir entre cero</string>
+    <string name="error_raiz_negativa">No se puede calcular la raíz de un número negativo</string>
+    <string name="historial_vacio">No hay operaciones registradas</string>
+
+</resources>
