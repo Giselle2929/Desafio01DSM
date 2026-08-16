@@ -5,9 +5,56 @@
     <color name="primaryDarkColor">#4F6D7A</color>
     <color name="accentColor">#A8C3B0</color>
 
+    <color name="primary">#0B5D68</color>
+    <color name="accent">#F2A541</color>
+
+    <color name="main_button">#0B5D68</color>
+
+    <color name="background">#121212</color>
+    <color name="surface">#1E1E1E</color>
+
     <color name="salario_bruto">#4CAF50</color>
     <color name="salario_neto">#D32F2F</color>
 
     <color name="white">#FFFFFF</color>
+
+    <!-- Colores originales de las operaciones -->
+    <color name="op_suma">#4FC3F7</color>
+    <color name="op_resta">#FF8A65</color>
+    <color name="op_multiplicacion">#81C784</color>
+    <color name="op_division">#FFD54F</color>
+    <color name="op_exponente">#BA68C8</color>
+    <color name="op_raiz">#F06292</color>
+
+    <color name="badge_purple">#8B7CF6</color>
+    <color name="title_purple">#A78BFA</color>
+
+    <!-- Menú principal -->
+    <color name="background_principal">#0B0A20</color>
+    <color name="texto_principal">#FFFFFF</color>
+    <color name="texto_secundario">#A7A3C5</color>
+    <color name="color_decoracion">#5D3FC3</color>
+    <color name="color_icono_historial">#8C75E8</color>
+
+    <!-- Calculadora -->
+    <color name="calculadora_background">#0B0A20</color>
+    <color name="calculadora_surface">#17152B</color>
+    <color name="calculadora_pantalla">#11101F</color>
+
+    <color name="calculadora_texto">#FFFFFF</color>
+    <color name="calculadora_texto_secundario">#A7A3C5</color>
+    <color name="calculadora_texto_resultado">#FFFFFF</color>
+
+    <color name="calculadora_numero">#29263D</color>
+    <color name="calculadora_numero_pressed">#3A3554</color>
+
+    <color name="calculadora_operacion">#5D3FC3</color>
+    <color name="calculadora_igual">#8B5CF6</color>
+    <color name="calculadora_especial">#403B52</color>
+
+    <color name="calculadora_historial">#302B45</color>
+    <color name="calculadora_historial_borde">#8B7CF6</color>
+
+    <color name="calculadora_borde">#39354F</color>
 
 </resources>

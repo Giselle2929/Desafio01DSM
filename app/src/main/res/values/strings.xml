@@ -5,18 +5,28 @@
 
     <!-- Menú principal -->
     <string name="titulo_principal">Primer Desafío Práctico</string>
+    <string name="subtitulo_principal">Selecciona un ejercicio</string>
+    <string name="bienvenido">Bienvenido</string>
     <string name="ejercicio_promedio">Promedio del estudiante</string>
     <string name="ejercicio_salario">Descuentos al salario</string>
     <string name="ejercicio_calculadora">Calculadora básica</string>
+    <string name="historial_operaciones">Historial de operaciones</string>
 
-    <!-- Ejercicio 1 -->
+    <!-- Ejercicio 1: Promedio -->
     <string name="titulo_promedio">Promedio del estudiante</string>
+    <string name="datos_estudiante">Datos del estudiante</string>
+    <string name="notas_ponderaciones">Notas y ponderaciones</string>
     <string name="nombre_estudiante">Nombre del estudiante</string>
     <string name="nota_1">Nota 1</string>
     <string name="nota_2">Nota 2</string>
     <string name="nota_3">Nota 3</string>
     <string name="nota_4">Nota 4</string>
     <string name="nota_5">Nota 5</string>
+    <string name="nota_1_label">Nota 1 (10%%)</string>
+    <string name="nota_2_label">Nota 2 (15%%)</string>
+    <string name="nota_3_label">Nota 3 (20%%)</string>
+    <string name="nota_4_label">Nota 4 (25%%)</string>
+    <string name="nota_5_label">Nota 5 (30%%)</string>
     <string name="calcular_promedio">Calcular promedio</string>
     <string name="promedio_final">Promedio final: %1$s</string>
     <string name="estado_aprobado">Estado: Aprobado</string>
@@ -26,8 +36,10 @@
     <string name="error_nota_rango">La nota debe estar entre 0 y 10</string>
     <string name="notificacion_promedio">Promedio: %1$s - %2$s</string>
 
-    <!-- Ejercicio 2 -->
+    <!-- Ejercicio 2: Salario -->
     <string name="titulo_salario">Descuentos al salario</string>
+    <string name="datos_empleado">Datos del empleado</string>
+    <string name="desglose_descuentos">Desglose de descuentos</string>
     <string name="nombre_empleado">Nombre del empleado</string>
     <string name="salario_base">Salario base</string>
     <string name="calcular_salario">Calcular salario</string>
@@ -38,11 +50,20 @@
     <string name="salario_neto">Salario neto: $%1$s</string>
     <string name="error_empleado">Ingrese el nombre del empleado</string>
     <string name="error_salario">Ingrese un salario válido</string>
+    <string name="empleado_resultado">Empleado: %1$s</string>
 
-    <!-- Ejercicio 3 -->
-    <string name="titulo_calculadora">Calculadora básica</string>
+    <!-- Ejercicio 3: Calculadora -->
+    <string name="titulo_calculadora">Calculadora</string>
+
+    <!-- Secciones -->
+    <string name="seccion_numeros">Números</string>
+    <string name="seccion_operaciones">Operaciones</string>
+
+    <!-- Entradas -->
     <string name="numero_1">Número 1</string>
     <string name="numero_2">Número 2</string>
+
+    <!-- Operaciones -->
     <string name="resultado">Resultado</string>
     <string name="suma">Suma</string>
     <string name="resta">Resta</string>
@@ -50,11 +71,54 @@
     <string name="division">División</string>
     <string name="exponente">Exponente</string>
     <string name="raiz">Raíz cuadrada</string>
+
+    <!-- Símbolos usados internamente por la calculadora -->
+    <string name="simbolo_suma">+</string>
+    <string name="simbolo_resta">-</string>
+    <string name="simbolo_multiplicacion">×</string>
+    <string name="simbolo_division">÷</string>
+    <string name="simbolo_exponente">^</string>
+
+    <!-- Números y caracteres -->
+    <string name="cero">0</string>
+    <string name="punto">.</string>
+    <string name="numero_1_calculadora">1</string>
+    <string name="numero_2_calculadora">2</string>
+    <string name="numero_3_calculadora">3</string>
+    <string name="numero_4">4</string>
+    <string name="numero_5">5</string>
+    <string name="numero_6">6</string>
+    <string name="numero_7">7</string>
+    <string name="numero_8">8</string>
+    <string name="numero_9">9</string>
+
+    <!-- Botones -->
+    <string name="limpiar">Limpiar</string>
+    <string name="borrar">Borrar</string>
+    <string name="igual">Igual</string>
+    <string name="ver_historial">Ver historial</string>
+    <string name="cerrar">Cerrar</string>
+    <string name="borrar_historial">Borrar historial</string>
+
+    <!-- Historial -->
     <string name="historial">Historial</string>
+    <string name="titulo_historial">Historial de operaciones</string>
+
+    <!-- Validaciones -->
     <string name="error_numero_1">Ingrese el primer número</string>
     <string name="error_numero_2">Ingrese el segundo número</string>
     <string name="error_division_cero">No se puede dividir entre cero</string>
     <string name="error_raiz_negativa">No se puede calcular la raíz de un número negativo</string>
+    <string name="error_resultado_invalido">El resultado no es válido</string>
+    <string name="error_guardar_historial">No se pudo guardar la operación</string>
     <string name="historial_vacio">No hay operaciones registradas</string>
+    <string name="historial_eliminado">Historial eliminado correctamente</string>
+
+    <!-- Formatos -->
+    <string name="formato_resultado">%1$s: %2$s</string>
+    <string name="formato_operacion">%1$s %2$s %3$s = %4$s</string>
+    <string name="formato_operacion_parcial">%1$s %2$s</string>
+    <string name="formato_raiz">√%1$s = %2$s</string>
+    <string name="formato_historial">%1$s:\n%2$s</string>
 
 </resources>
