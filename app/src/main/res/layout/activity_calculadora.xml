@@ -1,0 +1,357 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- TÍTULO -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/titulo_calculadora"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <!-- PANTALLA DE RESULTADO -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="145dp"
+            android:orientation="vertical"
+            android:gravity="center_vertical"
+            android:padding="18dp"
+            android:background="@drawable/bg_tarjeta_principal">
+
+            <TextView
+                android:id="@+id/txtOperacion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:maxLines="2"
+                android:text="@string/resultado"
+                android:textColor="@color/texto_secundario"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/txtResultado"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end"
+                android:maxLines="1"
+                android:text="@string/cero"
+                android:textColor="@color/white"
+                android:textSize="38sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+
+        <!-- BOTONES ESPECIALES -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="65dp"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <Button
+                android:id="@+id/btnLimpiar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_boton_principal"
+                android:text="@string/limpiar"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btnBorrar"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_boton_principal"
+                android:text="@string/borrar"
+                android:textColor="@color/white"
+                android:textStyle="bold" />
+
+            <!-- RAÍZ -->
+
+            <ImageButton
+                android:id="@+id/btnRaiz"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_boton_operacion"
+                android:backgroundTint="@color/op_raiz"
+                android:contentDescription="@string/raiz"
+                android:padding="15dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_raiz" />
+
+            <!-- EXPONENTE -->
+
+            <ImageButton
+                android:id="@+id/btnPotencia"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_boton_operacion"
+                android:backgroundTint="@color/op_exponente"
+                android:contentDescription="@string/exponente"
+                android:padding="15dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_exponente" />
+
+        </LinearLayout>
+
+        <!-- 7 8 9 DIVISIÓN -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn7"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_badge_numero"
+                android:text="@string/numero_7"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/btn8"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_badge_numero"
+                android:text="@string/numero_8"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/btn9"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_badge_numero"
+                android:text="@string/numero_9"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <ImageButton
+                android:id="@+id/btnDivision"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_boton_operacion"
+                android:backgroundTint="@color/op_division"
+                android:contentDescription="@string/division"
+                android:padding="15dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_division" />
+
+        </LinearLayout>
+
+        <!-- 4 5 6 MULTIPLICACIÓN -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn4"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_badge_numero"
+                android:text="@string/numero_4"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/btn5"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_badge_numero"
+                android:text="@string/numero_5"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/btn6"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_badge_numero"
+                android:text="@string/numero_6"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <ImageButton
+                android:id="@+id/btnMultiplicacion"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_boton_operacion"
+                android:backgroundTint="@color/op_multiplicacion"
+                android:contentDescription="@string/multiplicacion"
+                android:padding="15dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_multiplicacion" />
+
+        </LinearLayout>
+
+        <!-- 1 2 3 RESTA -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn1"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_badge_numero"
+                android:text="@string/numero_1_calculadora"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/btn2"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_badge_numero"
+                android:text="@string/numero_2_calculadora"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/btn3"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_badge_numero"
+                android:text="@string/numero_3_calculadora"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <ImageButton
+                android:id="@+id/btnResta"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_boton_operacion"
+                android:backgroundTint="@color/op_resta"
+                android:contentDescription="@string/resta"
+                android:padding="15dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_restar" />
+
+        </LinearLayout>
+
+        <!-- 0 PUNTO IGUAL SUMA -->
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btn0"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_badge_numero"
+                android:text="@string/cero"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/btnPunto"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_badge_numero"
+                android:text="@string/punto"
+                android:textColor="@color/white"
+                android:textSize="22sp" />
+
+            <Button
+                android:id="@+id/btnIgual"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_boton_principal"
+                android:text="@string/igual"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/btnSuma"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:layout_margin="4dp"
+                android:background="@drawable/bg_boton_operacion"
+                android:backgroundTint="@color/op_suma"
+                android:contentDescription="@string/suma"
+                android:padding="15dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/ic_suma" />
+
+        </LinearLayout>
+
+        <!-- HISTORIAL -->
+
+        <Button
+            android:id="@+id/btnHistorial"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/bg_historial"
+            android:text="@string/ver_historial"
+            android:textColor="@color/white"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+</ScrollView>
