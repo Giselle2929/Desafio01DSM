@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/activity_margin">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/titulo_salario"
+            android:textSize="@dimen/title_size"
+            android:textStyle="bold"
+            android:textColor="@color/title_purple"
+            android:gravity="center"
+            android:layout_marginTop="@dimen/top_margin"
+            android:layout_marginBottom="@dimen/element_margin" />
+
+        <!-- Tarjeta: datos del empleado -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/surface"
+            app:cardCornerRadius="@dimen/corner_radius"
+            app:cardElevation="2dp"
+            android:layout_marginBottom="@dimen/element_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/datos_empleado"
+                    android:textColor="@color/title_purple"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/section_margin_bottom" />
+
+                <EditText
+                    android:id="@+id/inputNombreEmpleado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/nombre_empleado"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/title_purple"
+                    android:inputType="text"
+                    android:layout_marginBottom="@dimen/element_margin" />
+
+                <EditText
+                    android:id="@+id/inputSalarioBase"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/salario_base"
+                    android:textColor="@color/white"
+                    android:textColorHint="@color/title_purple"
+                    android:inputType="numberDecimal" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:id="@+id/btnCalcularSalario"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/button_height"
+            android:text="@string/calcular_salario"
+            android:textAllCaps="false"
+            android:backgroundTint="@color/primary"
+            android:textColor="@color/white"
+            android:layout_marginBottom="@dimen/element_margin" />
+
+        <!-- Tarjeta: desglose de descuentos -->
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardBackgroundColor="@color/surface"
+            app:cardCornerRadius="@dimen/corner_radius"
+            app:cardElevation="2dp"
+            android:layout_marginBottom="@dimen/element_margin">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/card_padding">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/desglose_descuentos"
+                    android:textColor="@color/title_purple"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="@dimen/section_margin_bottom" />
+
+                <TextView
+                    android:id="@+id/txtNombreEmpleado"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:textStyle="bold"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="@dimen/element_margin" />
+
+                <TextView
+                    android:id="@+id/txtDescuentoRenta"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="@dimen/small_margin" />
+
+                <TextView
+                    android:id="@+id/txtDescuentoAfp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/white"
+                    android:layout_marginBottom="@dimen/small_margin" />
+
+                <TextView
+                    android:id="@+id/txtDescuentoIsss"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="@dimen/text_size"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+
+        <!-- Salario bruto: verde -->
+        <TextView
+            android:id="@+id/txtSalarioBruto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/surface"
+            android:textColor="@color/salario_bruto"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size"
+            android:padding="@dimen/card_padding"
+            android:layout_marginBottom="@dimen/element_margin" />
+
+        <!-- Salario neto: rojo -->
+        <TextView
+            android:id="@+id/txtSalarioNeto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/surface"
+            android:textColor="@color/salario_neto"
+            android:textStyle="bold"
+            android:textSize="@dimen/text_size"
+            android:padding="@dimen/card_padding" />
+
+    </LinearLayout>
+</ScrollView>
